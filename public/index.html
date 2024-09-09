@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviços - Unhas D' Ouro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div id="container">
+            <img src="https://i.pinimg.com/474x/4f/1d/7e/4f1d7ebf2887915944ee1871f2af5b27.jpg" alt="">
+            <h1>Unhas D'a Ouro</h1>
+        </div>
+        <section id="services-section">
+            <h2>Selecione o Serviço:</h2>
+            <div id="services-container">
+                <!-- Os serviços serão carregados aqui pelo JavaScript -->
+            </div>
+        </section>
+        <section id="appointment-section">
+            <h2>Agende seu Horário:</h2>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="professionals">Selecione o Profissional:</label>
+                    <select id="professionals" name="professionals">
+                        <!-- Opções de profissionais serão carregadas aqui pelo JavaScript -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Selecione a Data:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Selecione o Horário:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone...">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Agendar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Unhas D' Ouro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
